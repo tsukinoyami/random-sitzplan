@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const mesasContainer = document.getElementById("mesasContainer");
 
-    let miGente = ["Cata J", "Sofi", "Mari", "Jose", "Facu", "Amandita", "Lino", "Varo", "Joaco", "Rolf", "Juli E", "Ange", "Ema", "Ele", "Vicky", "Lau", "Juli R", "Javi", "Clara", "Ame", "Nico", "Fer", "Juli B", "Chuma"];
+    let miGente = ["Cata J", "Sofi", "Mari", "Jose", "Mati", "Facu", "Amandita", "Lino", "Varo", "Joaco", "Rolf", "Juli E", "Ange", "Ema", "Ele", "Vicky", "Lau", "Juli R", "Javi", "Clara", "Ame", "Nico", "Fer", "Juli B", "Chuma"];
     const totalRows = 5;
     const mesaPattern = [2, 'spacer', 3, 'spacer', 2]; // patrón por fila
 
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                     const mesa = document.createElement("div");
                     mesa.classList.add("mesa");
-                    mesa.textContent = `Mesa ${randomPerson}`;
+                    mesa.textContent = randomPerson;
                     rowDiv.appendChild(mesa);
                 }
             }
